@@ -791,7 +791,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1282092616}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_TargetAssemblyTypeName: EventMENU, Assembly-CSharp
         m_MethodName: Return
         m_Mode: 1
         m_Arguments:
@@ -932,7 +932,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1282092615}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b12efd7232180946aa349934676eae3, type: 3}
+  m_Script: {fileID: 11500000, guid: 9eb8e210791b7c34499b389ca4efa123, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &1282092617
