@@ -381,6 +381,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b12efd7232180946aa349934676eae3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameOverPanel: {fileID: 0}
+  totalCoins: 0
+  scoreText: {fileID: 0}
+  highScoreText: {fileID: 0}
 --- !u!1 &269148140
 GameObject:
   m_ObjectHideFlags: 0
