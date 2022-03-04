@@ -2030,6 +2030,8 @@ MonoBehaviour:
   totalCoins: 0
   scoreText: {fileID: 650595346}
   highScoreText: {fileID: 1685790813}
+  invaders: {fileID: 1880208711}
+  shields: {fileID: 898717051}
 --- !u!4 &2142089164
 Transform:
   m_ObjectHideFlags: 0

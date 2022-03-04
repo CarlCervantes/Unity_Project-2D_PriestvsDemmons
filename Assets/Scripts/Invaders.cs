@@ -16,6 +16,7 @@ public class Invaders : MonoBehaviour
     
 
     private Vector3 _direction = Vector2.down;
+    public Vector3 initialPosition { get; private set; }
 
     public Projectile eProjectilePrefab;
 
@@ -28,6 +29,7 @@ public class Invaders : MonoBehaviour
 
     private void Awake()
     {
+        initialPosition = transform.position;
         for (int row = 0; row < this.rows; row++)
         {
             float width = 3.0f * (this.rows - 1);
@@ -37,9 +39,12 @@ public class Invaders : MonoBehaviour
 
             for(int col = 0; col < this.columns; col++)
             {
+                // Create an invader and parent it to this transform
                 Invader invader = Instantiate(this.prefabs[row], this.transform);
-                Vector3 position = rowPosition;
                 invader.killed += InvaderKilled;
+
+                // Calculate and set the position of the invader in the row
+                Vector3 position = rowPosition;
                 position.y += col * 3.0f;
                 invader.transform.localPosition = position;
             }
@@ -89,10 +94,7 @@ public class Invaders : MonoBehaviour
     {
         this.amountKilled++;
         manager.totalCoins += 10;
-        if(this.speed.Evaluate(this.percentKilled) >= 50)
-        {
-            manager.totalCoins += 30;
-        }
+       
     }
 
     private void Attack()
@@ -110,6 +112,18 @@ public class Invaders : MonoBehaviour
                 break;
                 //el break garantiza que solo saldra un ataque en lugar de varios a la vez
             }
+        }
+    }
+
+    public void resetInvaders()
+    {
+        amountKilled = 0;
+        _direction = Vector2.down;
+        transform.position = initialPosition;
+
+        foreach(Transform invader in transform)
+        {
+            invader.gameObject.SetActive(true);
         }
     }
 }

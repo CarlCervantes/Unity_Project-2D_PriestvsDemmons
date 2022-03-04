@@ -56,5 +56,9 @@ public class Player_Move : MonoBehaviour
         {
             hits.numberOfShields--;
         }
+        else if (collision.gameObject.layer == LayerMask.NameToLayer("Enemy"))
+        {
+            GameManager.gameOver = true;
+        }
     }
 }

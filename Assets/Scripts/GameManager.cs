@@ -14,6 +14,9 @@ public class GameManager : MonoBehaviour
     public Text scoreText;
     public Text highScoreText;
 
+    public Invaders invaders;
+    public Shields shields;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,14 +24,31 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1;
     }
 
+    private void Awake()
+    {
+        invaders = FindObjectOfType<Invaders>();
+    }
+
     // Update is called once per frame
     void Update()
     {
         SetScoreText(totalCoins);
+
+        if (totalCoins > highScore)
+        {
+            SetHighScoreText(totalCoins);
+        }
+
         if (gameOver)
         {
             Time.timeScale = 0;
             gameOverPanel.SetActive(true);
+        }
+
+        if (invaders.amountAlive == 0)
+        {
+            shields.numberOfShields++;
+            NewRound();
         }
     }
 
@@ -59,5 +79,11 @@ public class GameManager : MonoBehaviour
     public void SetHighScoreText(int score)
     {
         highScoreText.text = score.ToString();
+    }
+
+    private void NewRound()
+    {
+        invaders.resetInvaders();
+        invaders.gameObject.SetActive(true);
     }
 }
