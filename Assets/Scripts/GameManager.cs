@@ -47,6 +47,7 @@ public class GameManager : MonoBehaviour
 
         if (invaders.amountAlive == 0)
         {
+            shields.health++;
             shields.numberOfShields++;
             NewRound();
         }

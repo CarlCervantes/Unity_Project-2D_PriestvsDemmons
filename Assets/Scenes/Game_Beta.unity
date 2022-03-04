@@ -1814,11 +1814,8 @@ MonoBehaviour:
   - {fileID: 977804889453265433, guid: 0a69c38b5682e394ea82ce7121915758, type: 3}
   - {fileID: 4691062242788161805, guid: fbbb67bcff0fa2d45b56f70d6f2712b5, type: 3}
   - {fileID: 4691062242788161805, guid: fbbb67bcff0fa2d45b56f70d6f2712b5, type: 3}
-  - {fileID: 2188284134133813466, guid: 39fc12c0c2b10754fbcc550433a08a0a, type: 3}
-  - {fileID: 2188284134133813466, guid: 39fc12c0c2b10754fbcc550433a08a0a, type: 3}
-  - {fileID: 5085572041626576728, guid: 76d05b2e734e303438aaccd4d4712ff3, type: 3}
   manager: {fileID: 2142089163}
-  rows: 8
+  rows: 5
   columns: 10
   speed:
     serializedVersion: 2
