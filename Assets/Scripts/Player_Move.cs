@@ -39,8 +39,8 @@ public class Player_Move : MonoBehaviour
         if (!isFireActive)
         {
             Projectile projectile = Instantiate(this.projectilePrefab, this.transform.position, Quaternion.identity);
-            projectile.destroyed += fireDestroy;
-            isFireActive = true;
+            //projectile.destroyed += fireDestroy;
+            //isFireActive = true;
         }
         
     }

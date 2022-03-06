@@ -5,13 +5,17 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
     public Vector3 direction;
-
+    
     public float speed;
-
+   
     public System.Action destroyed;
     void Start()
     {
         
+    }
+    private void Awake()
+    {
+     
     }
 
     // Update is called once per frame
@@ -22,6 +26,8 @@ public class Projectile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        
+
         if(this.destroyed != null)
         {
             this.destroyed.Invoke();
