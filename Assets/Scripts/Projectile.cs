@@ -32,7 +32,7 @@ public class Projectile : MonoBehaviour
         {
             this.destroyed.Invoke();
         }
-        
-        Destroy(this.gameObject);
+       
+            Destroy(this.gameObject);
     }
 }

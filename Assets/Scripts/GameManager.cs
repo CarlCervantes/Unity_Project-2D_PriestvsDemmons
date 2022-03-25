@@ -55,7 +55,7 @@ public class GameManager : MonoBehaviour
 
     public void Play_Replay()
     {
-        SceneManager.LoadScene("Game_Beta");
+        SceneManager.LoadScene("GAME");
     }
 
     public void Controls()

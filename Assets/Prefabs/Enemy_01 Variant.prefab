@@ -11,6 +11,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy_01 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 1413724643193894365, guid: accb789306438964c927e9e78eea6d78, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 3650671234242478225, guid: accb789306438964c927e9e78eea6d78, type: 3}
       propertyPath: m_Size.x
       value: 4.813675

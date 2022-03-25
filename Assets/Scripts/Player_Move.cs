@@ -8,11 +8,13 @@ public class Player_Move : MonoBehaviour
 
     public Projectile projectilePrefab;
     public Shields hits;
+    private Animator animator;
 
     private bool isFireActive;
+
     void Start()
     {
-        
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -29,7 +31,8 @@ public class Player_Move : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
         {
-            Shooting();
+            StartCoroutine(Attack());
+             
         }
 
         
@@ -45,6 +48,18 @@ public class Player_Move : MonoBehaviour
         
     }
 
+    public IEnumerator Attack()
+    {
+        animator.SetBool("Attacking", true);
+        yield return null;
+        animator.SetBool("Attacking", false);
+        yield return new WaitForSeconds(.33f);
+        //yield return new WaitForSeconds(.1f);
+        Shooting();
+    }
+
+    
+
     void fireDestroy()
     {
         isFireActive = false;
@@ -54,7 +69,9 @@ public class Player_Move : MonoBehaviour
     {
         if(collision.gameObject.layer == LayerMask.NameToLayer("Enemy_Projectile"))
         {
+            
             hits.numberOfShields--;
+          
         }
         else if (collision.gameObject.layer == LayerMask.NameToLayer("Enemy"))
         {
