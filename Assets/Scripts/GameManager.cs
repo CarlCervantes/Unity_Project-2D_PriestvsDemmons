@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
 
     public Invaders invaders;
     public Shields shields;
+    private Boss_Script boss;
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +28,7 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         invaders = FindObjectOfType<Invaders>();
+        boss = FindObjectOfType<Boss_Script>();
     }
 
     // Update is called once per frame
