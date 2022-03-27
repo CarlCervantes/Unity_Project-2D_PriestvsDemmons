@@ -7,13 +7,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 439056674872867459, guid: accb789306438964c927e9e78eea6d78, type: 3}
+      propertyPath: animTime
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 439056674872867459, guid: accb789306438964c927e9e78eea6d78, type: 3}
+      propertyPath: animsprites.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 439056674872867459, guid: accb789306438964c927e9e78eea6d78, type: 3}
+      propertyPath: animsprites.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: 08d1cc021cb87e94c84a90d9a64ed75a, type: 3}
+    - target: {fileID: 439056674872867459, guid: accb789306438964c927e9e78eea6d78, type: 3}
+      propertyPath: animsprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: a2d1559181e2eb843bb86dc8ce3aa7cb, type: 3}
     - target: {fileID: 1413724643193894365, guid: accb789306438964c927e9e78eea6d78, type: 3}
       propertyPath: m_Name
       value: Enemy_01 Variant
       objectReference: {fileID: 0}
     - target: {fileID: 1413724643193894365, guid: accb789306438964c927e9e78eea6d78, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Easy
       objectReference: {fileID: 0}
     - target: {fileID: 3650671234242478225, guid: accb789306438964c927e9e78eea6d78, type: 3}
       propertyPath: m_Size.x
@@ -26,7 +42,7 @@ PrefabInstance:
     - target: {fileID: 3650671234242478225, guid: accb789306438964c927e9e78eea6d78, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 5cfe9ca90221b024a8b1dbad2da2996f, type: 3}
+      objectReference: {fileID: 21300000, guid: 08d1cc021cb87e94c84a90d9a64ed75a, type: 3}
     - target: {fileID: 3650671234242478225, guid: accb789306438964c927e9e78eea6d78, type: 3}
       propertyPath: m_SortingOrder
       value: 1
@@ -61,11 +77,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3650900188804916917, guid: accb789306438964c927e9e78eea6d78, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 2.3999999
+      value: 2.75
       objectReference: {fileID: 0}
     - target: {fileID: 3650900188804916917, guid: accb789306438964c927e9e78eea6d78, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 2.2125
+      value: 2.75
       objectReference: {fileID: 0}
     - target: {fileID: 3650900188804916917, guid: accb789306438964c927e9e78eea6d78, type: 3}
       propertyPath: m_SpriteTilingProperty.adaptiveTilingThreshold

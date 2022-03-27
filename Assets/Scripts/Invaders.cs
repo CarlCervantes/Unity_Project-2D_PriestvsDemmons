@@ -93,7 +93,7 @@ public class Invaders : MonoBehaviour
     private void InvaderKilled()
     {
         this.amountKilled++;
-        manager.totalCoins += 10;
+        manager.totalCoins += 10;    
        
     }
 
