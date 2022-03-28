@@ -12,8 +12,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Controles.unity
     guid: 3723e99fabe16da4a9898e97ed207528
   - enabled: 1
-    path: Assets/Scenes/Game_Beta.unity
-    guid: 955db90bbde827841b43e43889d95dd8
+    path: Assets/Scenes/GAME.unity
+    guid: bbe59f000c361da43bfdfa9b98962ac8
   - enabled: 1
     path: Assets/Scenes/EndGame.unity
     guid: 7036e613602eab94080421278bb89b44

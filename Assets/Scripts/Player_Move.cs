@@ -69,7 +69,7 @@ public class Player_Move : MonoBehaviour
     {
         if(collision.gameObject.layer == LayerMask.NameToLayer("Enemy_Projectile"))
         {
-            
+            animator.SetTrigger("TakeDamage");
             hits.numberOfShields--;
           
         }
